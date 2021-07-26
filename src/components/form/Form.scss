@@ -1,0 +1,86 @@
+/* Here we define general css styling for the form itself, we don't actually set any positioning or dimension styles, in case we want to use it somewhere else */
+
+@import "../../styles/cross-style.scss";
+
+.Form {
+  background: #FFF;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.InputField {
+  width: 100%;
+  margin-bottom: $margin-spacing;
+  padding: $padding-top-bottom;
+  padding-left: 30px;
+  border-radius: $border-radius-small;
+  border: 1px solid $color-gray;
+  font-family: $font-stack;
+  font-weight: 700;
+  color: #4f4f4f;
+  caret-color: $color-accent;
+}
+
+.InputField:focus {
+  border: 1px solid $color-accent;
+  color: #1c1c1c;
+}
+
+.Invalid {
+  background-image: url('../../assets/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  border: 2px solid $color-primary!important;
+  color: $color-primary!important;
+}
+
+.ValidationErrorMessage {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 11px;
+  color: $color-primary;
+  text-align: right;
+  margin: -15px 0 20px 0;
+}
+
+input:focus {
+  outline: none;  //Really bad for accessibility
+}
+
+.Submit {
+  width: 100%;
+  padding: $padding-top-bottom;
+  cursor: pointer;
+  background: hsl(154, 59%, 51%);
+  border-radius: $border-radius-small;
+  border: 1px solid hsl(154, 59%, 45%);
+  color: $font-color-default;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 4px 0px 0px hsl(154, 59%, 45%);
+}
+
+.Submit:hover {
+  background: hsl(154, 59%, 71%);
+}
+
+.Terms {
+  font-size: 11px;
+  text-align: center;
+  margin-top: $margin-spacing;
+  font-weight: 700;
+  color: $color-gray;
+}
+
+.textred {
+  color: $color-primary;
+}
+
+@media only screen and (max-width: 734px) {
+  .InputField {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "signup-form-gpeacx",
+  "author": "Gonzalo Spota",
+  "version": "1.0.0",
+  "description": "Example of a responsive sign-up form using JavaScript and React for the GM2 Team",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://gm2-sffjid@git.codesubmit.io/gm2/signup-form-gpeacx"
+  },
+  "keywords": [
+    "example",
+    "test",
+    "gm2",
+    "javascript",
+    "react",
+    "signup",
+    "sign-up",
+    "form",
+    "responsive",
+    "design",
+    "web",
+    "site"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-sass": "4.14.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "sanitize.css": "^12.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "enzyme": "^3.11.0"
+  }
+}

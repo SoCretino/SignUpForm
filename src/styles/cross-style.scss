@@ -1,0 +1,21 @@
+/* Since there's a lot of css values that we use across all divs, might as well define them here as SASS variables for a quick change if we need to. */
+
+//Font properties
+$font-stack: 'Poppins', sans-serif;
+$font-size-default: 16px;
+$font-color-default: #FFF;
+
+//Colors
+$color-primary: hsl(0, 100%, 74%);
+$color-accent: hsl(248, 32%, 49%);
+$color-neutral: hsl(249, 10%, 26%);
+$color-neutral-alt: hsl(246, 25%, 77%);
+$color-gray: #CCC;
+
+//Positioning
+$padding-top-bottom: 20px 0;
+
+//General
+$border-radius: 10px;
+$border-radius-small: 5px;
+$margin-spacing: 20px;

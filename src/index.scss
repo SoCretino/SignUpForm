@@ -1,0 +1,66 @@
+@import url(sanitize.css);  //Let's provide consistent styling for all browsers
+@import "./styles/cross-style.scss";
+
+// General site properties
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-default;
+  font-weight: 400;
+  color: $font-color-default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  line-height: 1.05;
+  font-size: 58px;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 1.5;
+  color: $font-color-default;
+  font-size: $font-size-default;
+  font-weight: 500;
+}
+
+// Handy class for no-wrapping
+.nowrap {
+  white-space: nowrap
+}
+
+.fontbold {
+  font-weight: 700
+}
+
+@media only screen and (max-width: 1068px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  h1 {
+    font-size: 38px
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  h1 {
+    font-size: 34px
+  }
+}
